@@ -1,0 +1,122 @@
+:root {
+    --vermelho: #0fa8ce;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: azure;
+}
+
+.main-bar { /* barra superior onde localiza-se o logo e os botões*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.logo { /*Canto superior esquerdo*/
+    font-size: 40px;
+    font-family: inherit;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    color: var(--vermelho);
+    margin-left: 20px;
+}
+
+nav { /*Barra de navegação superior*/
+    margin-right: 10px;
+}
+
+.links { /*Botões principais do menu da tela inicial*/
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.links:hover { /*Decoração dos botões*/
+    color: #ffff
+}
+
+.destaque { /*Container do filme em destaque*/
+    font-size: 14px;
+    background: linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .70)100%), url('../img/MostWanted-case1.jpg');
+    background-size: cover;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 16px;
+}
+
+.td { /*Titulo e descrição do filme principal*/
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 60%;
+
+}
+
+.title { /*Titulo do filme principal*/
+    font-size: 50px;
+    margin-bottom: 5px;
+    margin-top: 15%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.descricao { /*Descrição do filme principal*/
+    margin-bottom: 70px;
+    font-size: 18px;
+}
+
+.btn { /*Botões assistir e informações*/
+    background-color: rgba(0,0,0, .50);
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 20px 70px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.btn i{ /*Icones dos botões*/
+    margin-right: 8px;
+}
+
+.btn:hover { /*Decoração dos botões assistir e informações*/
+    background-color: var(--vermelho);
+}
+
+.cat-title {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.carousel-filmes {
+    margin-top: 20px;
+}
+
+.box-film {
+    height: 100%;
+    width: 100%;
+    display: block;
+}

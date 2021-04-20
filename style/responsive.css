@@ -1,0 +1,13 @@
+@media screen and (max-width:800px){
+    .main-bar { /* barra superior onde localiza-se o logo e os botões*/
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px){
+    .btn {
+        margin-top: 10px;
+        width: 190px;
+    }
+}
